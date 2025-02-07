@@ -1,8 +1,5 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
 import "./App.css";
-import React from "react";
-import Card from "./card.jsx";
+import Card from "./Card.jsx";
 function Team() {
   return (
     <>
@@ -15,15 +12,13 @@ function Team() {
               pic="Unmesh.jpg"
               role="Team Lead"
               linkedin="https://www.linkedin.com/in/unmesh-ghosh/"
-              github="https://www.linkedin.com/in/unmesh-ghosh/"
+              github="https://github.com/Unmesh100"
             />
             <Card
               className="small-text"
               name="Tridib Roy Chowdhury"
               pic="trc.jpg"
               role="Backend Developer"
-              linkedin="https://www.linkedin.com/in/unmesh-ghosh/"
-              github="https://www.linkedin.com/in/unmesh-ghosh/"
             />
             <Card
               name="Parthib Biswas"
@@ -37,6 +32,8 @@ function Team() {
               name="Dhritiman Bhattacharjee"
               pic="dhriti.jpg"
               role="Designer"
+              linkedin="https://www.linkedin.com/in/dhritiman-bhattacharjee-b399a5292/"
+              github="https://github.com/Dhriti007"
             />
           </div>
         </main>
