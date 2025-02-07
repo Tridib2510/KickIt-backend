@@ -1,5 +1,3 @@
-import React from "react";
-
 function card(props) {
   return (
     <div>
@@ -17,10 +15,10 @@ function card(props) {
           <p className="card-text"></p>
           <div className="social-icons">
             <a href={props.linkedin} className="li" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a className="gi" target="_blank" href={props.github}>
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </div>
         </div>
