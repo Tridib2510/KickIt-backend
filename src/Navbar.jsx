@@ -6,9 +6,12 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-yellow navbar-light">
       <div className="container-fluid d-flex justify-content-between">
         {/* Brand on the left */}
-        <a className="navbar-brand fw-bold" href="#">
-          KickIT
-        </a>
+
+        <img
+          src="Frame 5.svg"
+          alt="Brand Logo"
+          style={{ width: "150px", height: "auto" }}
+        />
 
         {/* Links in the center */}
         <div className="mx-auto">
