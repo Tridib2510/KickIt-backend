@@ -24,9 +24,11 @@ function JoinUs() {
       }}
     >
       <div className="logo">
-        <h4 style={{ margin: 0, marginBottom: "30px", marginTop: "10px" }}>
-          Kick IT
-        </h4>
+        <img
+          src="Frame 5.svg"
+          alt="Brand Logo"
+          style={{ width: "150px", height: "auto" }}
+        />
       </div>
       <div
         className="box"
@@ -41,6 +43,7 @@ function JoinUs() {
           flexDirection: "column",
           alignItems: "center",
           padding: "20px",
+          marginTop: "40px",
         }}
       >
         <h4 style={{ margin: 0, marginTop: "80px" }}>Join Us</h4>
