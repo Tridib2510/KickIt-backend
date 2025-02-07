@@ -84,7 +84,12 @@ function AllEvents() {
     color: "black",
     border: "2px solid black",
   };
-
+  const ClickSports = () => {
+    console.log("Sports Button clicked!");
+  };
+  const NewButton = () => {
+    console.log("New Button clicked!");
+  };
   return (
     <>
       <FontAwesomeIcon icon={faUser} style={iconStyle} />
@@ -96,8 +101,12 @@ function AllEvents() {
         </div>
       </div>
       <div className="newbutton" style={stylebuttonNew}>
-        <button style={stylebuttonNew2}>Club</button>
-        <button style={stylebuttonNew2}>Location</button>
+        <button style={stylebuttonNew2} onClick={NewButton}>
+          Club
+        </button>
+        <button style={stylebuttonNew2} onClick={NewButton}>
+          Location
+        </button>
       </div>
 
       <div
@@ -108,9 +117,15 @@ function AllEvents() {
           gap: "20px",
         }}
       >
-        <button style={stylebutton}>Football</button>
-        <button style={stylebutton}>Cricket</button>
-        <button style={stylebutton}>Badminton</button>
+        <button style={stylebutton} onClick={ClickSports}>
+          Football
+        </button>
+        <button style={stylebutton} onClick={ClickSports}>
+          Cricket
+        </button>
+        <button style={stylebutton} onClick={ClickSports}>
+          Badminton
+        </button>
       </div>
 
       <SportsDetails name="football" />
