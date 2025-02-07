@@ -8,7 +8,6 @@ function JoinUs() {
   const handleButtonClick = () => {
     navigate("/CreateEvent");
   };
-  const navigate2 = useNavigate();
   const handleButtonClick2 = () => {
     navigate("/AllEvents");
   };
