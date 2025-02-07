@@ -1,8 +1,6 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import PropTypes from "prop-types";
 import SportsDetails from "./SportsDetails";
 function AllEvents() {
   const iconStyle = {
@@ -11,12 +9,7 @@ function AllEvents() {
     right: "10px",
     fontSize: "2em", // Increase the size of the icon
   };
-  const logoStyle = {
-    position: "absolute",
-    top: "10px",
-    left: "10px",
-    fontSize: "1.5em", // Increase the size of the icon
-  };
+
   const searchBarContainerStyle = {
     display: "flex",
     alignItems: "center",
@@ -69,7 +62,6 @@ function AllEvents() {
   return (
     <>
       <FontAwesomeIcon icon={faUser} style={iconStyle} />
-      <h style={logoStyle}>Kick</h>
       <div className="searchbar" style={searchBarContainerStyle}>
         <input type="text" placeholder="Search" style={searchBarStyle} />
         <div style={searchIconContainerStyle} onClick={handleSearchClick}>
