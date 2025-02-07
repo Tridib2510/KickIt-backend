@@ -31,9 +31,9 @@ function JoinUs() {
       <div
         className="box"
         style={{
-          width: "100%",
+          width: "100vw",
           maxWidth: "400px",
-          height: "auto",
+          height: "400px",
           backgroundColor: "white",
           border: "1px solid black",
           borderRadius: "20px",
@@ -43,13 +43,13 @@ function JoinUs() {
           padding: "20px",
         }}
       >
-        <h4 style={{ margin: 0, marginTop: "80px" }}>Join Us</h4>
+        <h4 style={{ margin: 0, marginTop: "100px", marginBottom:"20px"}}>Join Us</h4>
         <FontAwesomeIcon icon={faHandshake} />
         <div
           className="buttons"
           style={{
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
             gap: "20px",
@@ -71,7 +71,7 @@ function JoinUs() {
               }}
               onClick={handleButtonClick}
             >
-              As a Team
+              As a Club
             </button>
           </div>
           <div
