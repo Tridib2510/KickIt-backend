@@ -69,7 +69,7 @@ function AllEvents() {
   return (
     <>
       <FontAwesomeIcon icon={faUser} style={iconStyle} />
-      <h style={logoStyle}>Kick</h>
+
       <div className="searchbar" style={searchBarContainerStyle}>
         <input type="text" placeholder="Search" style={searchBarStyle} />
         <div style={searchIconContainerStyle} onClick={handleSearchClick}>
