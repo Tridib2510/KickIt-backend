@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import SportsDetails from "./SportsDetails";
+import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 function AllEvents() {
   const iconStyle = {
     position: "absolute",
@@ -58,17 +59,33 @@ function AllEvents() {
     gap: "10px",
     borderRadius: "30px",
   };
+  const stylebuttonNew = {
+    width: "100%",
+    marginTop: "20px",
+    padding: "10px 20px",
+    display: "flex", // Add this line
+    flexDirection: "row",
+    alignItems: "center",
+    gap: "50px",
+    justifyContent: "center",
+    borderRadius: "30px",
+  };
 
   return (
     <>
       <FontAwesomeIcon icon={faUser} style={iconStyle} />
-      <h style={logoStyle}>Kick</h>
+
       <div className="searchbar" style={searchBarContainerStyle}>
         <input type="text" placeholder="Search" style={searchBarStyle} />
         <div style={searchIconContainerStyle} onClick={handleSearchClick}>
           <FontAwesomeIcon icon={faMagnifyingGlass} style={searchIconStyle} />
         </div>
       </div>
+      <div className="newbutton" style={stylebuttonNew}>
+        <button style={stylebuttonNew}>Club</button>
+        <button style={stylebuttonNew}>Location</button>
+      </div>
+
       <div
         className="buttons"
         style={{
