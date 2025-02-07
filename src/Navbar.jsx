@@ -44,9 +44,14 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-bold" href="#">
-                Contact Us
-              </a>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link fw-bold active-link" : "nav-link fw-bold"
+                }
+                to="/tournament"
+              >
+                Tournament
+              </NavLink>
             </li>
           </ul>
         </div>

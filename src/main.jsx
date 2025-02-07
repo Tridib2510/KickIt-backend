@@ -75,6 +75,16 @@ const router = createBrowserRouter([
       </div>
     ),
   },
+  {
+    path: "/tournament",
+    element: (
+      <div>
+        <Navbar />
+        <AllEvents />
+        <SportsAnim />
+      </div>
+    ),
+  },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
