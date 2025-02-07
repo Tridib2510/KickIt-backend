@@ -9,11 +9,8 @@ import Teams from "./Teams.jsx";
 import JoinUs from "./JoinUs.jsx";
 import CreateEvent from "./CreateEvent.jsx";
 import AllEvents from "./AllEvents.jsx";
+import Tournament from "./Tournament.jsx";
 import {
-  BrowserRouter,
-  Routes,
-  Link,
-  Route,
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
@@ -80,7 +77,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Navbar />
-        <AllEvents />
+        <Tournament />
         <SportsAnim />
       </div>
     ),
