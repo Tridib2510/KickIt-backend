@@ -70,6 +70,20 @@ function AllEvents() {
     justifyContent: "center",
     borderRadius: "30px",
   };
+  const stylebuttonNew2 = {
+    width: "100%",
+    marginTop: "20px",
+    padding: "10px 20px",
+    display: "flex", // Add this line
+    flexDirection: "row",
+    alignItems: "center",
+    gap: "50px",
+    justifyContent: "center",
+    borderRadius: "30px",
+    backgroundColor: "white",
+    color: "black",
+    border: "2px solid black",
+  };
 
   return (
     <>
@@ -82,8 +96,8 @@ function AllEvents() {
         </div>
       </div>
       <div className="newbutton" style={stylebuttonNew}>
-        <button style={stylebuttonNew}>Club</button>
-        <button style={stylebuttonNew}>Location</button>
+        <button style={stylebuttonNew2}>Club</button>
+        <button style={stylebuttonNew2}>Location</button>
       </div>
 
       <div
