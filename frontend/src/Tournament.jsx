@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import SportsDetails from "./SportsDetails";
+import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 function AllEvents() {
   const iconStyle = {
     position: "absolute",
@@ -18,9 +19,9 @@ function AllEvents() {
   };
   const searchBarStyle = {
     width: "800px",
-    padding: "10px", // Add padding for gap between placeholder and border
+    padding: "10px",
     fontSize: "1em",
-    boxSizing: "border-box", // Ensure padding doesn't affect the width
+    boxSizing: "border-box",
     backgroundColor: "white",
     color: "black",
     borderRadius: "10px",
@@ -126,15 +127,15 @@ function AllEvents() {
           Badminton
         </button>
         <button style={stylebutton} onClick={ClickSports}>
-        Tennis
+          Tennis
         </button>
       </div>
 
-      <SportsDetails name="football" />
-      <SportsDetails name="Cricker" />
-      <SportsDetails name="Badminton" />
-      <SportsDetails name="Tennis" />
-      <SportsDetails name="Tennis" />
+      <SportsDetails name="football" details="/" />
+      <SportsDetails name="Cricker" details="/" />
+      <SportsDetails name="Badminton" details="/" />
+      <SportsDetails name="Tennis" details="/" />
+      <SportsDetails name="Tennis" details="/" />
     </>
   );
 }
