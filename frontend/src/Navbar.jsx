@@ -11,6 +11,7 @@ function Navbar() {
           src="Frame 5.svg"
           alt="Brand Logo"
           style={{ width: "150px", height: "auto" }}
+          NavLink
         />
 
         {/* Links in the center */}
