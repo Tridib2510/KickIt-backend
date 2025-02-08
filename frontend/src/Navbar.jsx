@@ -1,8 +1,9 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-yellow navbar-light">
+    <nav className="navbar navbar-expand-lg custom-navbar navbar-light">
       <div className="container-fluid d-flex justify-content-between">
         {/* Brand on the left */}
 
