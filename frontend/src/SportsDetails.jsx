@@ -1,6 +1,7 @@
 import React from "react";
 import sports from "./AllEvents";
 import PropTypes from "prop-types";
+
 function SportsDetails(props) {
   const footballStyle = {
     width: "800px", // Same width as search bar

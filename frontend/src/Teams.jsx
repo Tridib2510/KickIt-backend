@@ -19,6 +19,7 @@ function Team() {
               name="Tridib Roy Chowdhury"
               pic="trc.jpg"
               role="Backend Developer"
+              linkedin="https://www.linkedin.com/in/tridib-roy-chowdhury-13a9b42a4/"
             />
             <Card
               name="Parthib Biswas"

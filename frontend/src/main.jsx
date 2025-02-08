@@ -10,10 +10,8 @@ import JoinUs from "./JoinUs.jsx";
 import CreateEvent from "./CreateEvent.jsx";
 import AllEvents from "./AllEvents.jsx";
 import Tournament from "./Tournament.jsx";
-import {
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import Booking from "./booking.jsx";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -68,7 +66,6 @@ const router = createBrowserRouter([
     element: (
       <div>
         <AllEvents />
-        <SportsAnim />
       </div>
     ),
   },
@@ -78,6 +75,15 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <Tournament />
+      </div>
+    ),
+  },
+  {
+    path: "/booking",
+    element: (
+      <div>
+        <Navbar />
+        <Booking />
         <SportsAnim />
       </div>
     ),
