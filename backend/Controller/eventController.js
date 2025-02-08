@@ -87,7 +87,7 @@ exports.chatApp=(catchAsync(async(req,res,next)=>{
 
 exports.createEvent=catchAsync(async(req,res,next)=>{
    console.log(req.body);
-
+   console.log(req.cookies.token)
    const decode=jwt.verify(req.cookies.token,process.env.JWT_SECRET)
    
    const id=decode.id
