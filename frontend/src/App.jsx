@@ -15,6 +15,7 @@ function AuthModal({ isOpen, onClose, onSubmit }) {
     email: "",
     password: "",
     confirmPassword: "",
+    skillLevel: "beginner",
   });
 
   const handleSubmit = (e) => {
@@ -91,26 +92,43 @@ function AuthModal({ isOpen, onClose, onSubmit }) {
           </div>
 
           {activeTab === "signup" && (
-            <div className="form-group">
-              <label htmlFor="confirmPassword">Confirm Password</label>
-              <div className="password-input-container">
-                <input
-                  type={showConfirmPassword ? "text" : "password"}
-                  id="confirmPassword"
-                  name="confirmPassword"
-                  value={formData.confirmPassword}
+            <>
+              <div className="form-group">
+                <label htmlFor="confirmPassword">Confirm Password</label>
+                <div className="password-input-container">
+                  <input
+                    type={showConfirmPassword ? "text" : "password"}
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    required
+                  />
+                  <button
+                    type="button"
+                    className="password-toggle"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                  >
+                    {showConfirmPassword ? "👁️" : "👁️‍🗨️"}
+                  </button>
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="skillLevel">Skill Level</label>
+                <select
+                  id="skillLevel"
+                  name="skillLevel"
+                  style={{ height: "50px" }}
+                  value={formData.skillLevel}
                   onChange={handleChange}
                   required
-                />
-                <button
-                  type="button"
-                  className="password-toggle"
-                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                 >
-                  {showConfirmPassword ? "👁️" : "👁️‍🗨️"}
-                </button>
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="Advance">Pro</option>
+                </select>
               </div>
-            </div>
+            </>
           )}
 
           <button type="submit" className="submit-button">
@@ -127,7 +145,6 @@ function App() {
 
   const handleAuth = (type, data) => {
     console.log("Auth type:", type, "Form data:", data);
-    // Here you would typically handle the authentication logic
     setIsAuthModalOpen(false);
   };
 
@@ -140,8 +157,8 @@ function App() {
           Anytime
         </h1>
         <p className="subtitle">
-          Anytime, anywhere- get ready to play, book your favorite sports venue
-          in seconds !
+          Anytime, anywhere - get ready to play, book your favorite sports venue
+          in seconds!
         </p>
         <button className="cta-button" onClick={() => setIsAuthModalOpen(true)}>
           Get Started

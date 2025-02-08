@@ -25,7 +25,7 @@ function SportsDetails(props) {
       >
         <div className={props.name} style={footballStyle}>
           <h4>
-            Football:
+            {props.name}:
             <a href={props.details} style={{ color: "blue" }}>
               {" "}
               Details

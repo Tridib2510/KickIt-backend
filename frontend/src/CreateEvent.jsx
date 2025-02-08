@@ -18,12 +18,14 @@ function CreateEvent() {
       }}
     >
       <div className="logo">
-        <h4 style={{ 
-          margin: 0, 
-          marginBottom: "30px", 
-          marginTop: "10px",
-          fontSize: "clamp(1.5rem, 4vw, 2rem)",
-        }}>
+        <h4
+          style={{
+            margin: 0,
+            marginBottom: "30px",
+            marginTop: "10px",
+            fontSize: "clamp(1.5rem, 4vw, 2rem)",
+          }}
+        >
           Kick IT
         </h4>
       </div>
@@ -44,11 +46,13 @@ function CreateEvent() {
           boxSizing: "border-box",
         }}
       >
-        <h4 style={{ 
-          margin: 0, 
-          marginTop: "10px",
-          fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
-        }}>
+        <h4
+          style={{
+            margin: 0,
+            marginTop: "10px",
+            fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
+          }}
+        >
           Create Event
         </h4>
         <input
@@ -75,6 +79,18 @@ function CreateEvent() {
             fontSize: "clamp(14px, 2vw, 16px)",
           }}
         />
+        <input
+          type="number"
+          placeholder="Player Required"
+          style={{
+            width: "100%",
+            padding: "clamp(8px, 2vw, 10px)",
+            backgroundColor: "white",
+            color: "black",
+            boxSizing: "border-box",
+            fontSize: "clamp(14px, 2vw, 16px)",
+          }}
+        />
 
         {/* Date and Time Picker Container */}
         <div
@@ -88,10 +104,13 @@ function CreateEvent() {
           }}
         >
           {/* Date Picker */}
-          <div className="custom-input" style={{ flex: "1 1 auto", minWidth: "120px" }}>
-            <input 
-              type="date" 
-              ref={dateRef} 
+          <div
+            className="custom-input"
+            style={{ flex: "1 1 auto", minWidth: "120px" }}
+          >
+            <input
+              type="date"
+              ref={dateRef}
               className="hidden-date-input"
               style={{
                 fontSize: "clamp(14px, 2vw, 16px)",
@@ -110,10 +129,13 @@ function CreateEvent() {
           </div>
 
           {/* Time Picker */}
-          <div className="custom-input" style={{ flex: "1 1 auto", minWidth: "120px" }}>
-            <input 
-              type="time" 
-              ref={timeRef} 
+          <div
+            className="custom-input"
+            style={{ flex: "1 1 auto", minWidth: "120px" }}
+          >
+            <input
+              type="time"
+              ref={timeRef}
               className="hidden-date-input"
               style={{
                 fontSize: "clamp(14px, 2vw, 16px)",
